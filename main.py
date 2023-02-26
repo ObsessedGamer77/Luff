@@ -6,8 +6,8 @@ import nextcord # For making Bot
 import datetime # For the duration of a song
 import wavelink # For discord voice stuff
 from wavelink.ext import spotify # For Spotify integration for wavelink
-from nextcord import Interaction, SlashOption, ChannelType # For slash commands
-from nextcord.abc import GuildChannel # 
+#from nextcord import Interaction, SlashOption, ChannelType # For slash commands
+#from nextcord.abc import GuildChannel # 
 ###################################################################################################
 # For intents for the bot to use when connecting to discord api
 intents = nextcord.Intents.default()
@@ -219,11 +219,11 @@ async def nowplaying(ctx: commands.Context):
   return await ctx.send(embed=em)
 ###################################################################################################
 # Begining of slash commands
-@bot.slash_command()
-async def join(interaction: Interaction):
-  """Joins your voice channel"""
-  
-  await interaction.response.send_message("I have joined your vc")
+#@bot.slash_command()
+#async def join(interaction: Interaction):
+#  """Joins your voice channel"""
+#  
+#  await interaction.response.send_message("I have joined your vc")
 ###################################################################################################
 # Main Program
 bot.run(TOKEN) # Runs the whole bot using the bot's discord token
